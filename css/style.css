@@ -24,6 +24,9 @@ a {
     text-decoration: none;
     color: inherit;
 }
+i {
+    font-style: normal;
+}
 img {
     max-width: 100%;
 }
@@ -34,38 +37,37 @@ img {
 }
 
 /* header */
+header {
+    background: #fcb6d0;
+    height: 100px;
+}
 .menu__container {
     width: 100%;
-    height: 100px;
+    line-height: 100px;
     /* position: fixed; */
 }
-.menu h1 {
-    font-size: var(--title-size);
-    line-height: 100px;
-}
 .menu {
-    background: skyblue;
     display: flex;
+    flex-direction: row-reverse;
     width: 1080px;
     margin: 0 auto;
-    line-height: 100px;
 }
 .munu__item {
     font-size: var(--sub-size);
-    display: ;
-
+    position: relative;
 }
-.menu .munu__item a {
+.munu__item a {
     padding: 1rem;
+    color: #f650a0;
 }
-.menu .munu__item a:after {
+.munu__item a:after {
     content: '';
     position: absolute;
     left: 50%;
-    bottom: 0;
-    background: purple;
+    bottom: 25%;
+    background: #ffdee1;
     width: 2px;
-    height: 2px;
+    height: 5px;
     transform: translateX(-50%);
     opacity: 0;
     transition: all .5s;
@@ -77,3 +79,24 @@ img {
 }
 
 /* skills */
+.about {
+    height: 100vh
+}
+.about__left {
+    float: left;
+}
+.resume {
+    text-align: center;
+    background: #ff9897;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    font-size: var(--desc-size);
+}
+.about__desc {
+    float: right;
+    width: 50%;
+}
