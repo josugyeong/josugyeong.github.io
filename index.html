@@ -8,40 +8,48 @@
 <title>조수경 포트폴리오 사이트</title>
 </head>
 <body>
-<!-- header -->
+<!-- intro -->
 <header>
-    <div class="menu__container">
-        <ul class="menu">
-            <li class="munu__item"><a href="#">About</a></li>
-            <li class="munu__item"><a href="#">Skills</a></li>
-            <li class="munu__item"><a href="#">Web</a></li>
-            <li class="munu__item"><a href="#">Design</a></li>
-        </ul>
-    </div>
+    <h2 class="leftTitle">portfolio</h2>
+    <img src="" alt="" class="logo image">
+    <h2 class="rightTitle">
+        <a href="mailto:fjqmzbxl1247@naver.com">fjqmzbxl1247@naver.com</a>
+    </h2>
+    <img src="" alt="" class="center">
+    <h1 class="greeting">Jo Su Gyeong<br>Portfolio</h1>
 </header>
+
+<!-- <section class="animation">
+</section> -->
+
+<!-- menu -->
+<nav>
+    <div class="inner">
+        <div class="menu__container">
+            <ul class="menu">
+                <li class="munu__item"><a href="#">About</a></li>
+                <li class="munu__item"><a href="#">Skills</a></li>
+                <li class="munu__item"><a href="#">Web</a></li>
+                <li class="munu__item"><a href="#">Design</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <!-- section.about -->
 <section class="about">
     <div class="inner">
-        <div class="about__left">
-            <div class="profile">
-                <img src="" alt="프로필 사진">
-            </div>
-            <div class="resume">
-                <a download=".pdf" href="./pdf/" class="about__download button">
-                    <i class="uil uil-file-download-alt">이력서(PDF) 다운로드</i>
-                </a>
-            </div>
+        <div class="profile">
+            <img src="" alt="profile img">
         </div>
-        <div class="about__desc">
-            <h1>안녕하세요.
-                <br>
-                신입 웹퍼블리셔 조수경입니다.
-            </h1>
+        <div class="about__desc flex-center">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsum autem sapiente, delectus nulla corrupti voluptatem deserunt ullam necessitatibus doloremque, vitae mollitia quas expedita quod rerum nihil molestiae a dignissimos.
-                Vel, laborum! Nemo dolorem quibusdam unde repellat inventore? Iure, incidunt at? Non obcaecati blanditiis quam quae, maxime est eligendi reprehenderit mollitia illo, rerum voluptatibus ex provident tempore cumque esse incidunt?
-                Officia, unde ipsum. Earum hic perferendis consequuntur quae deleniti quidem in placeat voluptates corporis totam, magnam tempore ratione corrupti dignissimos aliquam architecto molestias est aperiam cum accusantium distinctio minus. Accusamus!
+                <h4>오늘 해야 할 일은 오늘 안에 끝내야 하는</h4>
+                <h1>신입 웹 퍼블리셔 조수경입니다.</h1>
+            </p>
+            <p>
+                기술적으로 잘하는 것도 중요하지만 개발하고, 코드를 작성하는 데 있어서 사람들 간의 소통도 매우 중요한 요소 중 하나라고 생각합니다.
+                다른 사람의 생각을 잘 받아들일 수 있고, 발전하기 위해서 항상 노력하겠습니다.
             </p>
         </div>
     </div>
@@ -50,7 +58,7 @@
 <!-- section.skills -->
 <section class="skills">
     <div class="inner">
-        <h1>skills</h1>
+        <h1 class="title">skills</h1>
         <div class="skills__web">
             <div class="skills__container">
                 <p>
@@ -117,46 +125,21 @@
 <!-- section.web -->
 <section class="web">
     <div class="inner">
-        <h1>Web</h1>
-        <div class="renewal">
-            <img src="./img/" alt="orion renewal">
-            <div class="modal">
-                <div class="content">
-                    detail
-                </div>
-                <div class="content">
-                    view
-                </div>
-                <div class="content">
-                    code
-                </div>
+        <h1 class="title">Web</h1>
+        <div class="web__container flex-center">
+            <div class="web__img">
+                <img src="" alt="orion renewal">
             </div>
-            <div class="renewal">
-                <img src="./img/" alt="호텔인터불고 renewal">
-                <div class="modal">
-                    <div class="content">
-                        detail
-                    </div>
-                    <div class="content">
-                        view
-                    </div>
-                    <div class="content">
-                        code
-                    </div>
-                </div>
-            </div>
-            <div class="renewal">
-                <img src="./img/" alt="캠파 app">
-                <div class="modal">
-                    <div class="content">
-                        detail
-                    </div>
-                    <div class="content">
-                        view
-                    </div>
-                    <div class="content">
-                        code
-                    </div>
+            <div class="web__desc">
+                <h1>오리온</h1>
+                <p>
+                    작업 시간 : 시간 
+                    기여도 : %
+                </p>
+                <div class="button__container">
+                    <a href="">VIEW</a>
+                    <a href="https://josugyeong.github.io/orion/" target="_blank">SITE</a>
+                    <a href="">GitHub</a>
                 </div>
             </div>
         </div>
@@ -166,9 +149,9 @@
 <!-- section.design -->
 <section class="design">
     <div class="inner">
-        <h1>Design</h1>
+        <h1 class="title">Design</h1>
         <div class="grid">
-            <img src="./img/" alt="e-world poster">
+            <img src="./img/" alt="e.world poster">
             <img src="./img/" alt="branding">
             <img src="./img/" alt="app design">
             <img src="./img/" alt="banner">
@@ -179,7 +162,7 @@
 <!-- footer -->
 <footer>
     <div class="inner">
-        <h1>조수경_Web Publisher</h1>
+        <h1 class="title">조수경_Web Publisher</h1>
         <a href="https://github.com/josugyeong">
             <i class="uil uil-github-alt"></i>
         </a>
@@ -193,9 +176,21 @@
                 <i class="uil uil-envelope-edit">fjqmzbxl1247@naver.com</i>
             </a>
         </div>
+        <div class="resume">
+            <a download=".pdf" href="./pdf/" class="about__download button">
+                <i class="uil uil-file-download-alt">이력서(PDF) 다운로드</i>
+            </a>
+        </div>
         <p>© Copyright 2021. Jo Su Gyeong All right reserved</p>
         <p>이 사이트는 상업적 목적이 아닌 개인 포트폴리오 임을 알려드립니다.</p>
     </div>
 </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
