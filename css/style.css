@@ -337,7 +337,7 @@ section {
     background: var(--design-bg);
 }
 .grid {
-    /* display: none; */
+    display: none;
 }
 
 /* footer */
@@ -359,9 +359,12 @@ footer .inner {
 }
 .profile_desc {
     display: flex;
+    position: relative;
 }
 .profile_desc i {
     font-size: var(--title-size);
+    position: absolute;
+    bottom: 30%;
 }
 .info__container {
     background: rgba(255, 255, 255, 0.363);
