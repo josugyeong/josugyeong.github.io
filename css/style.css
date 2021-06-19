@@ -35,12 +35,16 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+    display: block;
 }
 i {
     font-style: normal;
 }
 img {
     max-width: 100%;
+}
+button {
+    border: none;
 }
 
 .inner {
@@ -213,44 +217,53 @@ section {
     background: var(--skills-bg);
 }
 .tab {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     /* align-items: center; */
-    margin: 0 auto;
+    background: var(--skills-container);
+    color: var(--font-color);
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
 }
 .tab__menu {
-    display: flex;
-    flex-direction: column;
-    width: 100px;
+    /* display: flex;
+    flex-direction: column; */
     background: var(--skills-container);
     font-size: var(--sub-size);
     color: var(--font-color);
     cursor: pointer;
-    border-radius: 10px 0 0 10px;
-    overflow: hidden;
-}
-.tab__menu a {
-    line-height: 80px;
+    overflow: hidden;    
+    flex: 1;
     text-align: center;
 }
-.tab__menu a.selected {
+.tab__menu button {
+    font-size: var(--title-size);
+    color: var(--font-color);
+    background: var(--skills-container);
+    text-align: center;
+    padding: 1rem;
+    width: 120px;
+}
+.tab__menu button.selected {
     background: var(--skills-choice);
     color: var(--sub-color);
 }
-.tab__sub {
+.tab__content {
+    flex: 9;
+    text-align: center;
     width: 800px;
     background: var(--skills-container);
     color: var(--font-color);
     font-size: var(--sub-size);
 }
-.container {
+.tab__desc {
+    color: var(--font-color);
+    background: var(--skills-container);
+    padding: 5rem;
     margin: 3rem 0;
     text-align: center;
 }
-.skill {
-    padding: 1rem;
-}
-.skill p:first-child {
+.field {
     font-weight: bold;
 }
 .skill__bar {
@@ -260,11 +273,18 @@ section {
     background: var(--skills-progessbar);
     border: 1px solid var(--skills-choice);
 }
+.skill__bar .progress__bar:nth-child(1) {
+    width: 90%;
+}
 .skill__bar p {
     float: right;
 }
-.skill p:last-child {
+.explanation, .percent {
     font-size: var(--desc-size);
+}
+.percent {
+    height: 25px;
+    line-height: 25px;
 }
 
 /* web */
@@ -317,7 +337,7 @@ section {
     background: var(--design-bg);
 }
 .grid {
-    display: none;
+    /* display: none; */
 }
 
 /* footer */
