@@ -133,3 +133,25 @@ $('.custom__slider').slick({
         cssEase: 'linear'
 });
 });
+
+var $modal = $('.modal');
+        var $overlay = $('.overlay');
+        var $btn = $('.detail_modal');
+        var $btnClose = $('.close__modal');
+        var $modalImg = $('#modalImg');
+        $overlay.hide();
+        $btn.click(function(){
+            var imgSrc = $(this).attr('data-img');
+            console.log(imgSrc)
+            // var imgSrc = "";
+            $modalImg.attr('src', imgSrc);
+            $overlay.fadeIn();
+        })
+        $btnClose.click(function(){
+                $overlay.fadeOut();
+            })
+            $overlay.click(function(e){
+                if(e.target == e.currentTarget){
+                    $(this).fadeOut();
+            }
+        });
