@@ -66,7 +66,7 @@ button {
     text-align: center;
 }
 i {
-    font-weight: 600;
+    font-weight: 300;
     font-size: var(--desc-size);
     padding: 1rem;
 }
@@ -96,7 +96,7 @@ header {
     width: 150px;
     position: fixed;
     top: 1rem;
-    left: 1rem;
+    left: .5rem;
     transform: translate(-100%);
 }
 .leftTitle {
@@ -234,12 +234,13 @@ section {
 }
 .tab__menu button {
     text-transform: uppercase;
-    font-size: var(--title-size);
+    font-size: var(--sub-size);
     color: var(--font-color);
     background: var(--skills-container);
     text-align: center;
     padding: 1.5rem;
     width: 150px;
+    font-weight: bold;
     cursor: pointer;
 }
 .tab__menu button.selected {
@@ -261,7 +262,6 @@ section {
     margin: 3rem 0;
 }
 .field {
-    font-weight: bold;
     width: 150px;
     text-align: center;
     margin: 0.5rem;
@@ -367,7 +367,6 @@ section {
 
 /* footer */
 footer {
-    position: relative;
     height: 100vh;
     text-align: center;
     line-height: 2;
@@ -394,22 +393,24 @@ footer .inner {
 .info__container {
     background: rgba(255, 255, 255, 0.363);
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    border-radius: 5px;
-    width: 1080px;
+    border-radius: 10px;
+    width: 600px;
     margin: 0 auto;
     height: 300px;
-    line-height: 180px;
 }
 .info {
     padding: 4rem 0;
 }
 .number, .mail {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 footer p {
-    margin: 3rem;
-    font-size: var(--sub-size);
     color: var(--font-color);
+}
+footer p:first-of-type {
+    font-size: var(--sub-size);
+    margin-top: 8rem;
+    font-weight: 500;
 }
 footer p:last-child {
     font-size: 16px
