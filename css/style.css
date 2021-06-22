@@ -117,6 +117,7 @@ header {
     transform: translate(-50%, -50%);
 }
 .greeting {
+    font-size: 46px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -302,10 +303,11 @@ section {
 }
 .slider__img {
     flex: 1;
+    margin-left: 5rem;
 }
 .slider__img img {
+    border: 1px solid #000;
     height: 470px;
-    padding: 2rem;
     margin-right: 3rem;
 }
 .slider__desc {
@@ -327,6 +329,7 @@ section {
 }
 .button__container {
     display: flex;
+    justify-content: space-between;
     width: 300px;
 }
 .button__container a, .button__container button {
