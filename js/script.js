@@ -116,3 +116,20 @@ $(this).addClass('selected');
 $desc.hide();
 $desc.eq(idx).slideDown();
 });
+
+$(document).ready(function(){
+$('.main__banner').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+});
+
+// custom slider
+$('.custom__slider').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        fade: true,
+        cssEase: 'linear'
+});
+});

@@ -297,45 +297,94 @@ section {
 .web {
     background: var(--web-bg);
 }
-.web__container {
-    background: var(--sub-color);
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-    width: 1080px;
-    margin: 0 auto;
-    height: 650px;
-    position: relative;
+.slider__content {
+    display: flex;
 }
 .slider__img {
-    float: left;
-    flex: 6;
+    flex: 1;
 }
 .slider__img img {
-    width: 70%;
-    padding: 5rem;
+    height: 470px;
 }
-.web__desc {
-    float: right;
-    flex: 4;
-    position: absolute;
-    right: 5%;
-    top: 23%;
+.slider__desc {
+    flex: 1;
+    font-size: var(--sub-size);
     color: var(--font-color);
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3rem;
 }
-.web__desc h1 {
-    font-size: var(--title-size);
-    padding: 5rem 0;
+.slider__desc p {
+    height: 10px;
+    line-height: 5;
 }
-.web__desc p {
-    font-size: var(--desc-size);
-    margin: .5rem;
+.slider__desc p:last-of-type {
+    margin-bottom: 10rem;
 }
-.web__desc p:last-of-type {
-    margin-bottom: 5rem;
+.button__container {
+    display: flex;
+    width: 300px;
 }
-.button__container .button {
+.button__container a {
     width: 80px;
-    display: inline-block;
-    margin: 0.5rem;
+    font-weight: 200;
+}
+.slider__desc p {
+    margin: 1rem 0;
+}
+.slick-prev,.slick-next {
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    cursor: pointer;
+}
+.slick-prev {
+    left: -4%;
+}
+.slick-next {
+    right: 0;
+}
+.slick-prev:after,
+.slick-next:after{
+    font-size: var(--title-size);
+    color: var(--font-color);
+    font-weight: bold;
+}
+.slick-prev:after, .slick-next:after{
+    font-family: unicons-line;
+}
+.slick-prev:after {
+    content: '\ec49';
+}
+.slick-next:after {
+    content: '\eb9f';
+}
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+.slick-dots li.slick-active button {
+    background: var(--font-color);
+}
+.slick-dots li {
+    margin-right: 2.5rem;
+}
+.slick-dots li button {
+    background: var(--box-color);
+    margin-top: 2rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 0;
+    cursor: pointer;
 }
 
 /* design */
@@ -348,7 +397,6 @@ section {
     transition: .3s;
     display: inline-block;
     margin: 1.5rem;
-
 }
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
