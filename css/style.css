@@ -8,23 +8,16 @@ html {
 :root {
     /* font-size */
     font-size: 62.5%;
-    --title-size: 3rem;
-    --sub-size: 2rem;
+    --title-size: 4rem;
+    --sub-size: 2.4rem;
     --desc-size: 1.6rem;
-
     /* color */
-    --font-color: #354649;
+    --font-color: #111;
     --sub-color: #fff;
-    --box-color: #a3c6c4;
-    --skills-choice: #cd9cf2;
-    --skills-container: #f6f3ff;
-    --skills-progessbar: linear-gradient(to right, #cfc7f8 0%, #d6a7eb 100%);
-    --section-bg: #e0e7e9;
-    --skills-bg: #e6eced;
-    --web-bg: #ecf1f2;
-    --design-bg: #f3f5f6;
+    --box-color: #e4f2fc;
+    --hover-color: #799be9;
+    --skills-progessbar: linear-gradient(to right, #6ee2f5 0%, #6454f0 100%);
 }
-
 /* reset.css */
 * {
     margin: 0;
@@ -60,7 +53,7 @@ button {
 }
 .title {
     text-transform: uppercase;
-    padding: 10rem 0 8rem;
+    margin: 10rem 0 10rem;
     font-size: var(--title-size);
     color: var(--font-color);
     text-align: center;
@@ -68,49 +61,43 @@ button {
 i {
     font-weight: 300;
     font-size: var(--desc-size);
-    padding: 1rem;
 }
 .button {
     display: block;
     text-align: center;
     background: var(--box-color);
-    width: 250px;
-    margin: 0 auto;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 10px;
-    color: var(--sub-color);
-    font-weight: 600;
+    color: var(--font-color);
     font-size: var(--desc-size);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
 }
 .button:hover {
-    background: var(--font-color);
+    background: var(--hover-color);
+    color: var(--sub-color);
 }
 
 /* header */
 header {
     height: 300vh;
-    background-image: linear-gradient(45deg, #cfd9df 0%, #e2ebf0 100%);    
+    /* background-image: linear-gradient(45deg, #cfd9df 0%, #e2ebf0 100%);     */
 }
 .logo-image {
-    width: 150px;
+    width: 180px;
     position: fixed;
-    top: 1rem;
-    left: .5rem;
-    transform: translate(-100%);
+    left: -5rem;
+    transform: translate(-50%);
 }
 .leftTitle {
     position: fixed;
-    top: 3.5rem;
     left: .5rem;
 }
 .rightTitle {
     position: fixed;
     right: .5rem;
-    top: 3.5rem;
 }
 .center {
-    width: 25%;
+    width: 30%;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -125,7 +112,7 @@ header {
     opacity: 0;
     text-align: center;
 }
-.active {
+/* .active {
     background: red;
 }
 .animation {
@@ -138,16 +125,12 @@ header {
     position: absolute;
     top: 50%;
     left: 0;
-}
+} */
 
 /* menu */
-nav {
-    background: var(--box-color);
-}
 .menu__container {
     width: 100%;
     line-height: 100px;
-    /* position: fixed; */
 }
 .menu {
     color: var(--font-color);
@@ -161,19 +144,19 @@ nav {
     position: relative;
 }
 .munu__item a {
-    padding: 1rem;
+    margin: 2rem;
 }
 .munu__item a:after {
     content: '';
     position: absolute;
     left: 50%;
     bottom: 25%;
-    background: #6c7a89;
+    background: var(--hover-color);
     width: 2px;
     height: 5px;
     transform: translateX(-50%);
     opacity: 0;
-    transition: all .5s;
+    transition: .5s;
 }
 .menu .munu__item a:hover:after {
     width: 100%;
@@ -184,88 +167,79 @@ nav {
 section {
     height: 100vh;
 }
-
 /* about */
 .about {
-    background: var(--section-bg);
-    color: var(--font-color);
+    background: url(../img/bg_1.jpg) no-repeat center/cover;
 }
 .profile img {
     width: 50%;
-    margin-top: -9rem;
-}
-.profile {
-    text-align: center;
+    margin: 0 0 12rem 18rem;
 }
 .about__desc {
     display: block;
-    text-align: center;
     color: var(--font-color);
 }
 .about__desc h4 {
-    font-size: var(--sub-size);
-    margin-bottom: .5rem;
+    font-size: var(--title-size);
+    margin-bottom: 1rem;
 }
 .about__desc h1 {
-    font-size: 2rem;
-    margin-bottom: 2.5rem;
+    font-size: var(--title-size);
+    margin-bottom: 5rem;
 }
 .about__desc p {
-    font-size: var(--desc-size);
-    margin: 0.5rem;
+    font-size: var(--sub-size);
+    margin: 1.2rem;
 }
 
 /* skills */
 .skills {
-    background: var(--skills-bg);
+    background: url(../img/bg_2.jpg) no-repeat center/cover;
 }
 .tab {
+    margin-top: 12rem;
     display: inline-block;
-    background: var(--skills-container);
     color: var(--font-color);
     overflow: hidden;
 }
 .tab__menu {
     display: flex;
-    background: var(--skills-container);
     font-size: var(--sub-size);
-    color: var(--font-color);
     overflow: hidden;    
     flex: 1;
 }
 .tab__menu button {
     text-transform: uppercase;
     font-size: var(--sub-size);
-    color: var(--font-color);
-    background: var(--skills-container);
+    color: var(--hover-color);
+    background: var(--sub-color);
     text-align: center;
     padding: 1.5rem;
-    width: 150px;
+    width: 160px;
     font-weight: bold;
     cursor: pointer;
 }
 .tab__menu button.selected {
-    background: var(--skills-choice);
+    background: var(--hover-color);
     color: var(--sub-color);
 }
 .tab__content {
-    margin-top: -3.5rem;
+    margin-top: -3.3rem;
     flex: 9;
     width: 100%;
-    background: var(--skills-container);
+    background: var(--sub-color);
     color: var(--font-color);
     font-size: var(--sub-size);
 }
 .tab__desc {
     color: var(--font-color);
-    background: var(--skills-container);
     padding: 5rem;
     margin: 3rem 0;
 }
 .field {
     width: 150px;
     text-align: center;
-    margin: 0.5rem;
+    margin: 1rem 0;
 }
 .field, .explanation {
     display: inline-block;
@@ -296,7 +270,7 @@ section {
 
 /* web */
 .web {
-    background: var(--web-bg);
+    background: url(../img/bg_4.jpg) no-repeat center/cover;
 }
 .slider__content {
     display: flex;
@@ -306,7 +280,6 @@ section {
     margin-left: 5rem;
 }
 .slider__img img {
-    border: 1px solid #000;
     height: 470px;
     margin-right: 3rem;
 }
@@ -318,7 +291,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 3rem;
 }
 .slider__desc p {
     height: 10px;
@@ -344,7 +316,7 @@ section {
     cursor: pointer;
 }
 .button__container button:hover {
-    background: var(--font-color);
+    background: var(--hover-color);
 }
 .slider__desc p {
     margin: 1rem 0;
@@ -387,7 +359,7 @@ section {
     cursor: pointer;
 }
 .slick-dots li.slick-active button {
-    background: var(--font-color);
+    background: var(--hover-color);
 }
 .slick-dots li {
     margin-right: 2.5rem;
@@ -407,7 +379,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0,s 0, 0.5);
     z-index: 100;
   }
   .modal {
@@ -446,7 +418,8 @@ section {
 
 /* design */
 .design {
-    background: var(--design-bg);
+    background: url(../img/bg_3.jpg) no-repeat center/cover;
+
 }
 .card {
     width: 350px;
