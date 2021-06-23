@@ -53,10 +53,10 @@ button {
 }
 .title {
     text-transform: uppercase;
-    margin: 10rem 0 10rem;
     font-size: var(--title-size);
     color: var(--font-color);
     text-align: center;
+    padding: 6rem;
 }
 i {
     font-weight: 300;
@@ -240,7 +240,7 @@ section {
 }
 .explanation, .percent {
     font-size: var(--desc-size);
-    color: var(--sub-color);
+    color: var(--title-color);
     padding: 0 0.5rem;
 }
 .percent {
