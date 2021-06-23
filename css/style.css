@@ -12,11 +12,11 @@ html {
     --sub-size: 2.4rem;
     --desc-size: 1.6rem;
     /* color */
-    --font-color: #111;
+    --font-color: #172321;
     --sub-color: #fff;
-    --box-color: #e4f2fc;
-    --hover-color: #799be9;
-    --skills-progessbar: linear-gradient(to right, #6ee2f5 0%, #6454f0 100%);
+    --box-color: #88cdf6;
+    --hover-color: #015c92;
+    --skills-progessbar: linear-gradient(to right, #bce6ff 0%, #2d82b5 100%);
 }
 /* reset.css */
 * {
@@ -66,7 +66,7 @@ i {
     display: block;
     text-align: center;
     background: var(--box-color);
-    color: var(--font-color);
+    color: var(--sub-color);
     font-size: var(--desc-size);
     height: 40px;
     line-height: 40px;
@@ -80,60 +80,45 @@ i {
 /* header */
 header {
     height: 300vh;
-    /* background-image: linear-gradient(45deg, #cfd9df 0%, #e2ebf0 100%);     */
-}
-.logo-image {
-    width: 180px;
-    position: fixed;
-    left: -5rem;
-    transform: translate(-50%);
+    background: url(../img/intro_bg.jpg) no-repeat center/cover;    
 }
 .leftTitle {
     position: fixed;
-    left: .5rem;
+    top: 1rem;
+    left: 2.5rem;
+    font-size: var(--sub-size);
+    color: var(--sub-color);
 }
 .rightTitle {
     position: fixed;
-    right: .5rem;
-}
-.center {
-    width: 30%;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 1rem;
+    right: 2.5rem;
+    font-size: var(--sub-size);
+    color: var(--sub-color);
 }
 .greeting {
-    font-size: 46px;
     position: fixed;
+    font-size: 46px;
+    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    text-align: center;
+    padding: 1.5rem;
+    border: 10px solid #fff;
+    color: var(--sub-color);
 }
-/* .active {
-    background: red;
-}
-.animation {
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-}
-.paper-plane {
-    height: 100px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-} */
 
 /* menu */
+nav {
+    background: #016280;
+}
 .menu__container {
     width: 100%;
     line-height: 100px;
 }
 .menu {
-    color: var(--font-color);
+    color: var(--sub-color);
     text-align: center;
 }
 .munu__item {
@@ -151,7 +136,7 @@ header {
     position: absolute;
     left: 50%;
     bottom: 25%;
-    background: var(--hover-color);
+    background: var(--sub-color);
     width: 2px;
     height: 5px;
     transform: translateX(-50%);
@@ -169,7 +154,6 @@ section {
 }
 /* about */
 .about {
-    background: url(../img/bg_1.jpg) no-repeat center/cover;
 }
 .profile img {
     width: 50%;
@@ -177,7 +161,7 @@ section {
 }
 .about__desc {
     display: block;
-    color: var(--font-color);
+    color: #AABFDF;
 }
 .about__desc h4 {
     font-size: var(--title-size);
@@ -190,11 +174,13 @@ section {
 .about__desc p {
     font-size: var(--sub-size);
     margin: 1.2rem;
+    color: var(--font-color);
 }
 
 /* skills */
 .skills {
-    background: url(../img/bg_2.jpg) no-repeat center/cover;
+    background: url(../img/section_bg.jpg) no-repeat center/cover;
+    opacity: .8;
 }
 .tab {
     margin-top: 12rem;
@@ -254,6 +240,8 @@ section {
 }
 .explanation, .percent {
     font-size: var(--desc-size);
+    color: var(--sub-color);
+    padding: 0 0.5rem;
 }
 .percent {
     line-height: 30px;
@@ -270,18 +258,16 @@ section {
 
 /* web */
 .web {
-    background: url(../img/bg_4.jpg) no-repeat center/cover;
 }
 .slider__content {
     display: flex;
 }
 .slider__img {
-    flex: 1;
+    flex: 1.5;
     margin-left: 5rem;
 }
 .slider__img img {
     height: 470px;
-    margin-right: 3rem;
 }
 .slider__desc {
     flex: 1;
@@ -291,6 +277,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 12.5rem;
 }
 .slider__desc p {
     height: 10px;
@@ -418,8 +405,6 @@ section {
 
 /* design */
 .design {
-    background: url(../img/bg_3.jpg) no-repeat center/cover;
-
 }
 .card {
     width: 350px;
