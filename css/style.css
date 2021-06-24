@@ -477,6 +477,7 @@ footer .inner {
     font-size: var(--title-size);
     position: absolute;
     bottom: 30%;
+    margin-left: -6rem;
 }
 .info__container {
     background: #f1f1f12c;
