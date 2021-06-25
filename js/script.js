@@ -1,5 +1,29 @@
 'use strict';
 
+/* ================= 안내 모달 start ===================== */
+$('.notice-modal__close').click(function(){
+        $('#notice').hide();
+    })
+    $('#notice').click(function(e){
+        if(e.target === e.currentTarget){
+            $(this).hide();
+        }
+    })
+    /* ================= 안내 모달 end ===================== */
+
+
+    /* ================= change theme ===================== */
+    $('#buttonDark').click(function(){
+        $(this).hide();
+        $('body').addClass('dark-theme');
+        $('#buttonLight').show();
+    })
+    $('#buttonLight').click(function(){
+        $('body').removeClass('dark-theme');
+        $('#buttonDark').show();
+        $(this).hide();
+    })
+
 // 컨트롤러 생성
 $(function(){
 // controller 생성
