@@ -516,23 +516,21 @@ nav {
 
 /* footer */
 footer {
+    width: 1080px;
+    margin: 0 auto;
     background: #A3A3A3;
     height: 80vh;
     text-align: center;
     line-height: 2;
     background: var(--section-bg);
     color: var(--font-color);
-    text-align: center;
 }
-footer .inner {
 
-    width: 1080px;
-    margin: 0 auto;
-    position: absolute;
-    top: 20%;
-    left: 22%;
-}
 .profile_desc {
+    width: 1040px;
+    margin: 0 auto;
+    text-align: center;
+    margin-right: -20rem;
     display: flex;
     position: relative;
 }
@@ -543,8 +541,9 @@ footer .inner {
     margin-left: -6rem;
 }
 .info__container {
+    border: 1px solid #000;
     background: #f1f1f12c;
-    box-shadow: 10px 10px 5px grey;
+    box-shadow: 10px 10px 5px rgba(204, 204, 204, 0.726);
     border-radius: 10px;
     width: 600px;
     margin: 0 auto;
