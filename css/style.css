@@ -18,6 +18,7 @@ html {
     --hover-color: #015c92;
     --skills-progessbar: linear-gradient(to right, #bce6ff 0%, #2d82b5 100%);
 }
+
 #skip {
     position: fixed;
     top: 0;
@@ -33,6 +34,7 @@ html {
 {
     transform: translateY(0);
 }
+
 /* ========================= 웹표준, 웹접근성 모달 ========================= */
 #notice {
     position: fixed;
@@ -107,6 +109,7 @@ button {
     border: none;
 }
 
+/* common */
 .inner {
     width: 1280px;
     margin: 0 auto;
@@ -348,7 +351,6 @@ nav {
 .slider__img img {
     height: 470px;
     width: 620px;
-    /* width: 800px; */
 }
 .slider__desc {
     font-size: var(--sub-size);
@@ -449,17 +451,17 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: rgba(0, 0,s 0, 0.5); */
+    background: rgba(0, 0,s 0, 0.5);
     z-index: 100;
   }
   .modal {
     width: 50%;
-    /* background: #fff; */
+    background: var(--sub-color);
     padding: 1rem;
     border-radius: 0.5rem;
-    /* border: 1px solid var(--grey-color); */
+    border: 1px solid var(--font-color);
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow-y: initial;
@@ -469,14 +471,14 @@ nav {
     position: absolute;
     top: -0.5rem;
     right: -0.5rem;
-    /* font-size: var(--font-medium); */
-    /* background: #fff; */
+    font-size: var(--desc-size);
+    background: var(--sub-color);
     width: 20px;
     height: 20px;
     display: flex;
     border-radius: 50%;
-    /* border: 1px solid #eee; */
-    /* color: var(--grey-color-dark); */
+    border: 1px solid var(--font-color);
+    color: var(--font-color);
     cursor: pointer;
     justify-content: center;
     align-items: center;
@@ -487,43 +489,29 @@ nav {
   }
 
 /* design */
-.design {
-    display: /none;
-    /* height: 80vh; */
-    background: #F7F9FA;
+.slick__container {
+    width: 1280px;
+    margin: 0 auto;
 }
-.card {
-    width: 20%;
-    width: 350px;
-    height: 320px;
+.item {
+    margin: 2rem 0;
 }
-.card {
-    vertical-align: top;
-    background: #fff;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: .3s;
+.container {
     display: inline-block;
-    margin: 1.5rem;
 }
-.card img {
-    flex: 9;
+.container img {
+    cursor: pointer;
+    vertical-align: top;
+    width: 300px;
+    height: 250px;
+    margin: 0 6rem;
 }
-.container {
-    flex: 1;
-}
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-.container {
-    padding: 1rem;
-    text-align: center;
-}
-.container h4 {
+.container p {
+    padding: 1.5rem;
     font-size: var(--desc-size);
-    height: 50px;
-    line-height: 50px;
     text-transform: uppercase;
-    font-weight: bold;
+    height: 30px;
+    text-align: center;
 }
 
 /* footer */

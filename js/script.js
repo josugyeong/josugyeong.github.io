@@ -179,3 +179,49 @@ var $modal = $('.modal');
                     $(this).fadeOut();
             }
         });
+
+        // $('.slick-container').slick();
+       /*  $('.slick-container').slick({
+                infinite: true, //양방향 무한 모션
+                speed:300, // 슬라이드 스피드
+                autoplay: true, //자동플레이 유무( false시 자동플레이 안됨 )
+                autoplaySpeed:4000, // 자동플레이 스피드
+                slidesToShow: 3
+              }); */
+              $('.slick-container').slick({
+                infinite: true, //양방향 무한 모션
+                speed:300, // 슬라이드 스피드
+                autoplay: true, //자동플레이 유무( false시 자동플레이 안됨 )
+                autoplaySpeed:4000, // 자동플레이 스피드
+                slidesToShow: 3, //한 화면에 보여줄 아이템수
+                slidesToScroll: 3 // 한번에 슬라이드 시킬 아이템 개수
+              });
+/*               $('.slick-container').slick({
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1, // 1개씩 슬라이드 
+                centerMode: true,  // 중앙배치
+                variableWidth: true // width 가 각각 다름을 표시 
+              }); */
+              $(function(){
+                // 이미지를 클릭했을때
+                var $portfolioImg = $('.portfolio__img');
+                var $overlay = $('.overlay');
+                $portfolioImg.click(function(){
+                    // 모달이 뜨고 이미지를 출력
+                    var src = $(this).children('img').attr('src');
+                    var $modlaImg = $('.modal img');
+                    console.log(src);
+                    // modal에 있는 img 엘리먼트 src에 이미지 주소를 세팅
+                    $modlaImg.attr('src', src);
+                    $overlay.show();
+            })
+                $overlay.click(function(e){
+                        console.log(e);
+                        // target은 내가 클릭한 객체
+                        // currentTarget은 이벤트가 발생한 객체
+                        if(e.target == e.currentTarget){
+                            $(this).fadeOut();
+                        }
+                    })
+            })
