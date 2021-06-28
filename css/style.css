@@ -354,6 +354,7 @@ nav {
 .slider__img img {
     height: 470px;
     width: 620px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 .slider__desc {
     font-size: var(--sub-size);
@@ -492,6 +493,9 @@ nav {
   }
 
 /* design */
+.design {
+    margin-bottom: 10rem
+}
 .slick__container {
     width: 1280px;
     margin: 0 auto;
@@ -508,6 +512,7 @@ nav {
     width: 300px;
     height: 250px;
     margin: 0 6rem;
+    border-radius: 5px;
 }
 .container p {
     padding: 1.5rem;
@@ -519,21 +524,21 @@ nav {
 
 /* footer */
 footer {
-    width: 1080px;
+    background: url(../img/footer_bg.jpg) no-repeat center/cover;
+    width: 100%;
+    /* width: 1080px; */
     margin: 0 auto;
-    background: #A3A3A3;
     height: 80vh;
     text-align: center;
     line-height: 2;
-    background: var(--section-bg);
+    /* background: var(--section-bg); */
     color: var(--font-color);
 }
 
-.profile_desc {
-    width: 1040px;
+.profile_desc, .profile_desc h1 {
+    color: var(--sub-color);
+    width: 600px;
     margin: 0 auto;
-    text-align: center;
-    margin-right: -20rem;
     display: flex;
     position: relative;
 }
@@ -541,19 +546,19 @@ footer {
     font-size: var(--title-size);
     position: absolute;
     bottom: 30%;
-    margin-left: -6rem;
+    margin-left: -8rem;
 }
 .info__container {
-    border: 1px solid #000;
+    border: 1px solid #333;
     background: #f1f1f12c;
-    box-shadow: 10px 10px 5px rgba(204, 204, 204, 0.726);
+    box-shadow: 10px 10px 5px rgba(204, 204, 204, 0.281);
     border-radius: 10px;
     width: 600px;
     margin: 0 auto;
     height: 300px;
 }
 .info {
-    padding: 4rem 0;
+    padding: 5.5rem 0;
 }
 .number, .mail, .resume {
     width: 240px;
@@ -563,7 +568,7 @@ footer {
     margin-bottom: 1.2rem;
 }
 footer p {
-    color: var(--font-color);
+    color: #51616A;
 }
 footer p:first-of-type {
     font-size: var(--sub-size);
