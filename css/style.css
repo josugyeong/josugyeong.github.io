@@ -280,6 +280,9 @@ nav {
     font-weight: bold;
     cursor: pointer;
 }
+.tab__menu i {
+    margin-right: .5rem;
+}
 .tab__menu button.selected {
     background: var(--hover-color);
     color: var(--sub-color);
@@ -372,7 +375,7 @@ nav {
     display: flex;
 }
 .button__container a, .button__container button {
-    width: 80px;
+    width: 100px;
     font-weight: 200;
 }
 .button__container button {
@@ -553,7 +556,7 @@ footer {
     padding: 4rem 0;
 }
 .number, .mail, .resume {
-    width: 220px;
+    width: 240px;
     margin: 0 auto;
 }
 .number, .mail {
