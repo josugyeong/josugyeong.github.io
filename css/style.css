@@ -157,33 +157,35 @@ i {
 .l-grid-11-12 { width: 91.66666667%; }
 .l-grid-12-12 { width: 100%;}
 
-/* grid tablet system  */
-.l-grid-tablet-1-12 { width: 8.33333333%; }
-.l-grid-tablet-2-12 { width: 16.66666667%; }
-.l-grid-tablet-3-12 { width: 25%; }
-.l-grid-tablet-4-12 { width: 33.33333333%; }
-.l-grid-tablet-5-12 { width: 41.66666667%; }
-.l-grid-tablet-6-12 { width: 50%; }
-.l-grid-tablet-7-12 { width: 58.33333333%; }
-.l-grid-tablet-8-12 { width: 66.66666667%; }
-.l-grid-tablet-9-12 { width: 75%; }
-.l-grid-tablet-10-12 { width: 83.33333333%; }
-.l-grid-tablet-11-12 { width: 91.66666667%; }
-.l-grid-tablet-12-12 { width: 100%;}
+@media (max-width: 768px) {
+    .l-col-tablet-1-12 { width: 8.33333333%; }
+    .l-col-tablet-2-12 { width: 16.66666667%; }
+    .l-col-tablet-3-12 { width: 25%; }
+    .l-col-tablet-4-12 { width: 33.33333333%; }
+    .l-col-tablet-5-12 { width: 41.66666667%; }
+    .l-col-tablet-6-12 { width: 50%; }
+    .l-col-tablet-7-12 { width: 58.33333333%; }
+    .l-col-tablet-8-12 { width: 66.66666667%; }
+    .l-col-tablet-9-12 { width: 75%; }
+    .l-col-tablet-10-12 { width: 83.33333333%; }
+    .l-col-tablet-11-12 { width: 91.66666667%; }
+    .l-col-tablet-12-12 { width: 100%;}
+}
 
-/* grid mobile system */
-.l-grid-mobile-1-12 { width: 8.33333333%; }
-.l-grid-mobile-2-12 { width: 16.66666667%; }
-.l-grid-mobile-3-12 { width: 25%; }
-.l-grid-mobile-4-12 { width: 33.33333333%; }
-.l-grid-mobile-5-12 { width: 41.66666667%; }
-.l-grid-mobile-6-12 { width: 50%; }
-.l-grid-mobile-7-12 { width: 58.33333333%; }
-.l-grid-mobile-8-12 { width: 66.66666667%; }
-.l-grid-mobile-9-12 { width: 75%; }
-.l-grid-mobile-10-12 { width: 83.33333333%; }
-.l-grid-mobile-11-12 { width: 91.66666667%; }
-.l-grid-mobile-12-12 { width: 100%;}
+@media (max-width: 480px) {
+    .l-col-mobile-1-12 { width: 8.33333333%; }
+    .l-col-mobile-2-12 { width: 16.66666667%; }
+    .l-col-mobile-3-12 { width: 25%; }
+    .l-col-mobile-4-12 { width: 33.33333333%; }
+    .l-col-mobile-5-12 { width: 41.66666667%; }
+    .l-col-mobile-6-12 { width: 50%; }
+    .l-col-mobile-7-12 { width: 58.33333333%; }
+    .l-col-mobile-8-12 { width: 66.66666667%; }
+    .l-col-mobile-9-12 { width: 75%; }
+    .l-col-mobile-10-12 { width: 83.33333333%; }
+    .l-col-mobile-11-12 { width: 91.66666667%; }
+    .l-col-mobile-12-12 { width: 100%;}
+}
 
 /* header */
 header {
