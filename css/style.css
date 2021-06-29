@@ -501,18 +501,34 @@ nav {
     margin: 0 auto;
 }
 .item {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
     margin: 2rem 0;
 }
 .container {
-    display: inline-block;
+
+    float: left;
+    text-align: center;
+    display: block;
 }
 .container img {
-    cursor: pointer;
+    display: block;
     vertical-align: top;
     width: 300px;
     height: 250px;
     margin: 0 6rem;
     border-radius: 5px;
+}
+.container button {
+    background: var(--sub-color);
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    line-height: 5px;
+    margin-left: 6rem;
 }
 .container p {
     padding: 1.5rem;
