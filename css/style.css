@@ -49,12 +49,10 @@ html {
     align-items: center;
 }
 .modal {
-    padding: 3rem;
     width: 500px;
-    height: 350px;
+    height: 500px;
     border-radius: .8rem;
     background: #fff;
-    border: 3px solid #999;
     position: relative;
 }
 .notice-modal__close {
@@ -111,7 +109,7 @@ button {
 
 /* common */
 .inner {
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 .flex-center {
@@ -461,15 +459,16 @@ nav {
   .modal {
     width: 50%;
     background: var(--sub-color);
-    padding: 1rem;
+    /* padding: 1rem; */
     border-radius: 0.5rem;
     border: 1px solid var(--font-color);
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow-y: initial;
     text-align: center;
+    height: 800px;
   }
   .close__modal {
     position: absolute;
@@ -496,6 +495,12 @@ nav {
 .design {
     margin-bottom: 10rem
 }
+.design h1 {
+    margin: 0;
+}
+.design p {
+    text-align: center;
+}
 .slick__container {
     width: 1280px;
     margin: 0 auto;
@@ -507,7 +512,7 @@ nav {
     margin: 2rem 0;
 }
 .container {
-
+    cursor: pointer;
     float: left;
     text-align: center;
     display: block;
@@ -518,9 +523,10 @@ nav {
     width: 300px;
     height: 250px;
     margin: 0 6rem;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 .container button {
+    border: 1px solid #000;
     background: var(--sub-color);
     cursor: pointer;
     display: block;
