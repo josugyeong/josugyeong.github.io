@@ -143,6 +143,48 @@ i {
     color: var(--sub-color);
 }
 
+/* grid */
+.l-grid-1-12 { width: 8.33333333%; }
+.l-grid-2-12 { width: 16.66666667%; }
+.l-grid-3-12 { width: 25%; }
+.l-grid-4-12 { width: 33.33333333%; }
+.l-grid-5-12 { width: 41.66666667%; }
+.l-grid-6-12 { width: 50%; }
+.l-grid-7-12 { width: 58.33333333%; }
+.l-grid-8-12 { width: 66.66666667%; }
+.l-grid-9-12 { width: 75%; }
+.l-grid-10-12 { width: 83.33333333%; }
+.l-grid-11-12 { width: 91.66666667%; }
+.l-grid-12-12 { width: 100%;}
+
+/* grid tablet system  */
+.l-grid-tablet-1-12 { width: 8.33333333%; }
+.l-grid-tablet-2-12 { width: 16.66666667%; }
+.l-grid-tablet-3-12 { width: 25%; }
+.l-grid-tablet-4-12 { width: 33.33333333%; }
+.l-grid-tablet-5-12 { width: 41.66666667%; }
+.l-grid-tablet-6-12 { width: 50%; }
+.l-grid-tablet-7-12 { width: 58.33333333%; }
+.l-grid-tablet-8-12 { width: 66.66666667%; }
+.l-grid-tablet-9-12 { width: 75%; }
+.l-grid-tablet-10-12 { width: 83.33333333%; }
+.l-grid-tablet-11-12 { width: 91.66666667%; }
+.l-grid-tablet-12-12 { width: 100%;}
+
+/* grid mobile system */
+.l-grid-mobile-1-12 { width: 8.33333333%; }
+.l-grid-mobile-2-12 { width: 16.66666667%; }
+.l-grid-mobile-3-12 { width: 25%; }
+.l-grid-mobile-4-12 { width: 33.33333333%; }
+.l-grid-mobile-5-12 { width: 41.66666667%; }
+.l-grid-mobile-6-12 { width: 50%; }
+.l-grid-mobile-7-12 { width: 58.33333333%; }
+.l-grid-mobile-8-12 { width: 66.66666667%; }
+.l-grid-mobile-9-12 { width: 75%; }
+.l-grid-mobile-10-12 { width: 83.33333333%; }
+.l-grid-mobile-11-12 { width: 91.66666667%; }
+.l-grid-mobile-12-12 { width: 100%;}
+
 /* header */
 header {
     height: 300vh;
@@ -218,7 +260,7 @@ nav {
 /* about */
 .about {
     height: 80vh;
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 .profile img {
@@ -251,6 +293,7 @@ nav {
 
 /* skills */
 .skills {
+    width: 100%;
     height: 100vh;
     background: url(../img/section_bg.jpg) no-repeat center/cover;
     opacity: .8;
@@ -341,6 +384,8 @@ nav {
 
 /* web */
 .web {
+    max-width: 1280px;
+    margin: 0 auto;
     height: 80vh;
 }
 .slider__content {
@@ -502,7 +547,7 @@ nav {
     text-align: center;
 }
 .slick__container {
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 .item {
