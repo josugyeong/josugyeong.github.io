@@ -261,15 +261,13 @@ nav {
 
 /* about */
 .about {
-    height: 80vh;
-    max-width: 1280px;
-    margin: 0 auto;
+    height: 70vh;
 }
 .profile img {
-    width: 400px;
+    width: 200px;
     float: left;
-    margin: 2rem;
-
+    margin: 0 6rem;
+    margin-top: 13.5rem;
 }
 .about__desc {
     height: 500px;
@@ -301,7 +299,7 @@ nav {
     opacity: .8;
 }
 .tab {
-    margin-top: 12rem;
+    margin-top: 1rem;
     display: inline-block;
     color: var(--font-color);
     overflow: hidden;
@@ -388,7 +386,7 @@ nav {
 .web {
     max-width: 1280px;
     margin: 0 auto;
-    height: 80vh;
+    height: 100vh;
 }
 .slider__content {
 
@@ -623,7 +621,7 @@ footer {
     font-size: var(--title-size);
     position: absolute;
     bottom: 30%;
-    margin-left: -8rem;
+    margin-left: -10.5rem;
 }
 .info__container {
     border: 1px solid #333;
@@ -632,7 +630,7 @@ footer {
     border-radius: 10px;
     width: 600px;
     margin: 0 auto;
-    height: 300px;
+    height: 200px;
 }
 .info {
     padding: 5.5rem 0;
