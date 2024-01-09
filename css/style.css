@@ -259,38 +259,6 @@ nav {
     opacity: 1;
 }
 
-/* about */
-.about {
-    height: 70vh;
-}
-.profile img {
-    width: 200px;
-    float: left;
-    margin: 0 6rem;
-    margin-top: 13.5rem;
-}
-.about__desc {
-    height: 500px;
-    width: 1400px;
-    line-height: 1.2;
-    padding: 14.5rem;
-    display: block;
-    color: #AABFDF;
-}
-.about__desc h4 {
-    font-size: var(--title-size);
-    margin-bottom: 1rem;
-}
-.about__desc h1 {
-    font-size: var(--title-size);
-    margin-bottom: 5rem;
-}
-.about__desc p {
-    font-size: var(--sub-size);
-    margin: 1.2rem;
-    color: var(--font-color);
-}
-
 /* skills */
 .skills {
     width: 100%;
